@@ -1,0 +1,102 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* base styles */
+.btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #1e1e1e;
+    color: #fff;
+    border: none;
+    transition: all .3s;
+    font-size: 120%;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #171717;
+}
+
+#equal {
+    background-color: #27ae60;
+}
+#clear {
+    background-color: #c0392b;
+}
+/* end of base styles */
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator-container {
+    width: 250px;
+    height: auto;
+    background-color: #2c2c2c;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.calculator-container .display {
+    width: 100%;
+    height: 80px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    color: #fff;
+    padding: 10px;
+    font-size: 120%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.calculator-container .clear-btns {
+    padding: 10px 0;
+}
+
+.controls {
+    display: flex;
+}
+
+.controls .numbers {
+    margin-top: 10px;
+    width: 75%;
+}
+
+.numbers .row {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+
+.numbers .row:last-child {
+    justify-content: center;
+}
+
+.numbers .row:first-child {
+    justify-content: flex-start;
+}
+
+.numbers .row:first-child .btn {
+    margin-right: 5px;
+}
+
+.controls .operations {
+    margin-top: 10px;
+    width: 25%;
+}
+
+.controls .operations .btn {
+    margin-bottom: 10px;
+}
