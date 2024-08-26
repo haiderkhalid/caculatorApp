@@ -3,6 +3,7 @@ let num2 = "";
 let operator = "";
 let result = null;
 let isOperatorSelected = false;
+const testGitHub = "";
 
 const numbers = document.querySelectorAll(".num");
 const addition = document.getElementById("addition");
